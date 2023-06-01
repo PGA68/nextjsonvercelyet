@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import LogRocket from 'logrocket'
+LogRocket.init('7pbor7/ownmlet')
 
 export default function Home() {
   return (
