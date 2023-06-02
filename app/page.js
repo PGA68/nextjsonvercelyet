@@ -1,7 +1,17 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import LogRocket from 'logrocket'
+
+const THE_USER_ID_IN_YOUR_APP = '1ll3hSSVSNHmrZdirlvpMQrg'
+
 LogRocket.init('7pbor7/ownmlet')
+LogRocket.identify(THE_USER_ID_IN_YOUR_APP, {
+  name: 'James Morrison',
+  email: 'jamesmorrison@example.com',
+  // Add your own custom user variables here, ie:
+  // subscriptionType: 'pro'
+});
+
 
 export default function Home() {
   return (
@@ -49,7 +59,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-           1. Docs <span>-&gt;</span>
+            1. Docs <span>-&gt;</span>
           </h2>
           <p>Find in-depth information about Next.js features and API.</p>
         </a>
@@ -61,7 +71,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-           2. Learn <span>-&gt;</span>
+            2. Learn <span>-&gt;</span>
           </h2>
           <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
         </a>
@@ -73,7 +83,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-           3. Templates <span>-&gt;</span>
+            3. Templates <span>-&gt;</span>
           </h2>
           <p>Explore the Next.js 13 playground.</p>
         </a>
@@ -85,7 +95,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-           4. Deploy <span>-&gt;</span>
+            4. Deploy <span>-&gt;</span>
           </h2>
           <p>
             Instantly deploy your Next.js site to a shareable URL with Vercel.
