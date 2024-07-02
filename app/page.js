@@ -1,17 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import LogRocket from 'logrocket'
-
-const THE_USER_ID_IN_YOUR_APP = '1ll3hSSVSNHmrZdirlvpMQrg'
-
-LogRocket.init('7pbor7/ownmlet')
-LogRocket.identify(THE_USER_ID_IN_YOUR_APP, {
-  name: 'James Morrison',
-  email: 'jamesmorrison@example.com',
-  // Add your own custom user variables here, ie:
-  // subscriptionType: 'pro'
-});
-
+import { LogMa } from './log'
 
 export default function Home() {
   return (
@@ -21,6 +10,7 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.js</code>
         </p>
+        <LogMa />
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
